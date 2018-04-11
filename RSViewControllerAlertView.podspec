@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSViewControllerAlertView'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Seameless designing using interface builder and integrate with RSViewControllerAlert will give you fully custom alert view, with lots of built in animation. It also provide a finer way to integrate your custom animation in it.'
 
 # This description is used to generate tags and improve search results.
