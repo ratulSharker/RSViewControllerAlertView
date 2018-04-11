@@ -10,15 +10,17 @@
 		09BF48DF7F3FC75CD397B26F5F01D515 /* Pods-RSViewControllerAlertView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6CDEA12ADAB330726EF77AB97416A5 /* Pods-RSViewControllerAlertView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		279628BFADF697B1EF401E2A9CFAA766 /* RSViewControllerAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C38C6937755EC08FD2A52FB5B8CEC620 /* RSViewControllerAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		492468CD32A48815F55A69337D93C246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4ABC19EEE6B1A24783CB7E90CF651ADD /* RSViewControllerAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E69FFF6DA475974AD6C8290B75E8EE /* RSViewControllerAlertView-dummy.m */; };
 		569F62D8EBFA6B15E84562177F70219F /* Pods-RSViewControllerAlertView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE245EDEA7BFA3BC05762A52DAF763 /* Pods-RSViewControllerAlertView_Tests-dummy.m */; };
 		898482BA9B2B4ACEE9C2586354A8DE40 /* Pods-RSViewControllerAlertView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405404404C67DCF476C1FD392704EAAE /* Pods-RSViewControllerAlertView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C16106034D0DBD9B482CA830BD6AC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9DD270D1C07E1360A70D1BE3F64C6B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B38FA845EF4FDD99EA4329009855D3C0 /* Pods-RSViewControllerAlertView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E6F22D7099D405430268F01CBD57E /* Pods-RSViewControllerAlertView_Example-dummy.m */; };
-		CAC2D08F207E27B900BF7A04 /* RSViewControllerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D08E207E27B900BF7A04 /* RSViewControllerAlertView.m */; };
-		CAC2D092207E27C600BF7A04 /* RSViewControllerAlertViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC2D090207E27C500BF7A04 /* RSViewControllerAlertViewProtocol.h */; };
-		CAC2D093207E27C600BF7A04 /* RSViewControllerAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC2D091207E27C500BF7A04 /* RSViewControllerAlertView.h */; };
+		CA408B85207E9125005A20FB /* RSViewControllerAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B82207E9124005A20FB /* RSViewControllerAlertView.h */; };
+		CA408B86207E9125005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B83207E9124005A20FB /* RSViewControllerAlertViewProtocol.h */; };
+		CA408B87207E9125005A20FB /* RSViewControllerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA408B84207E9124005A20FB /* RSViewControllerAlertView.m */; };
+		CA408B88207E9145005A20FB /* RSViewControllerAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B82207E9124005A20FB /* RSViewControllerAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA408B89207E9145005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B83207E9124005A20FB /* RSViewControllerAlertViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA408B8A207E9152005A20FB /* RSViewControllerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA408B84207E9124005A20FB /* RSViewControllerAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +60,10 @@
 		B295AA0FCF3E9323C99CEA75328F28BD /* Pods-RSViewControllerAlertView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RSViewControllerAlertView_Example.modulemap"; sourceTree = "<group>"; };
 		B73C7B53154218C79EF1CE717CF66387 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C38C6937755EC08FD2A52FB5B8CEC620 /* RSViewControllerAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSViewControllerAlertView-umbrella.h"; sourceTree = "<group>"; };
-		C5E69FFF6DA475974AD6C8290B75E8EE /* RSViewControllerAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSViewControllerAlertView-dummy.m"; sourceTree = "<group>"; };
 		C82F668D75D93C734DCF7F7C77509460 /* Pods-RSViewControllerAlertView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSViewControllerAlertView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CAC2D08E207E27B900BF7A04 /* RSViewControllerAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSViewControllerAlertView.m; path = RSViewControllerAlertView/Classes/RSViewControllerAlertView.m; sourceTree = "<group>"; };
-		CAC2D090207E27C500BF7A04 /* RSViewControllerAlertViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSViewControllerAlertViewProtocol.h; path = Example/Pods/Headers/RSViewControllerAlertViewProtocol.h; sourceTree = "<group>"; };
-		CAC2D091207E27C500BF7A04 /* RSViewControllerAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSViewControllerAlertView.h; path = Example/Pods/Headers/RSViewControllerAlertView.h; sourceTree = "<group>"; };
+		CA408B82207E9124005A20FB /* RSViewControllerAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSViewControllerAlertView.h; sourceTree = "<group>"; };
+		CA408B83207E9124005A20FB /* RSViewControllerAlertViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSViewControllerAlertViewProtocol.h; sourceTree = "<group>"; };
+		CA408B84207E9124005A20FB /* RSViewControllerAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSViewControllerAlertView.m; sourceTree = "<group>"; };
 		CD5790C880736A9B3A979A7859433FAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF79B5A42CDFAB69F291305086CCC6D2 /* Pods-RSViewControllerAlertView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSViewControllerAlertView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EC56B60BFA4EB5F5604724B2564A2669 /* Pods-RSViewControllerAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSViewControllerAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +106,6 @@
 				CD5790C880736A9B3A979A7859433FAC /* Info.plist */,
 				0D1862132C3D9810A0EC1AE86F6FD00B /* RSViewControllerAlertView.modulemap */,
 				A1C529894034943295BC6E5ED2982765 /* RSViewControllerAlertView.xcconfig */,
-				C5E69FFF6DA475974AD6C8290B75E8EE /* RSViewControllerAlertView-dummy.m */,
 				F875C3BB7F5291A32C36BCD197064F89 /* RSViewControllerAlertView-prefix.pch */,
 				C38C6937755EC08FD2A52FB5B8CEC620 /* RSViewControllerAlertView-umbrella.h */,
 			);
@@ -195,6 +195,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CA408B80207E9124005A20FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CA408B82207E9124005A20FB /* RSViewControllerAlertView.h */,
+				CA408B83207E9124005A20FB /* RSViewControllerAlertViewProtocol.h */,
+				CA408B84207E9124005A20FB /* RSViewControllerAlertView.m */,
+			);
+			name = Classes;
+			path = RSViewControllerAlertView/Classes;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +217,6 @@
 		DDC1C39194718677DBD74D94B1666325 /* RSViewControllerAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				CAC2D08E207E27B900BF7A04 /* RSViewControllerAlertView.m */,
 				EA3D973638068B3E1915F34D1AF486CC /* Pod */,
 				00ACEA1FBABE96649649C9D20D4D18CB /* Support Files */,
 			);
@@ -217,8 +227,7 @@
 		EA3D973638068B3E1915F34D1AF486CC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CAC2D091207E27C500BF7A04 /* RSViewControllerAlertView.h */,
-				CAC2D090207E27C500BF7A04 /* RSViewControllerAlertViewProtocol.h */,
+				CA408B80207E9124005A20FB /* Classes */,
 				B73C7B53154218C79EF1CE717CF66387 /* LICENSE */,
 				0A60D812FD1EC3782252DA0AE1D07E4B /* README.md */,
 				540D0A897EA4794183BDFA68339A8EDD /* RSViewControllerAlertView.podspec */,
@@ -233,9 +242,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAC2D093207E27C600BF7A04 /* RSViewControllerAlertView.h in Headers */,
-				CAC2D092207E27C600BF7A04 /* RSViewControllerAlertViewProtocol.h in Headers */,
+				CA408B85207E9125005A20FB /* RSViewControllerAlertView.h in Headers */,
 				898482BA9B2B4ACEE9C2586354A8DE40 /* Pods-RSViewControllerAlertView_Example-umbrella.h in Headers */,
+				CA408B86207E9125005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				279628BFADF697B1EF401E2A9CFAA766 /* RSViewControllerAlertView-umbrella.h in Headers */,
+				CA408B88207E9145005A20FB /* RSViewControllerAlertView.h in Headers */,
+				CA408B89207E9145005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B38FA845EF4FDD99EA4329009855D3C0 /* Pods-RSViewControllerAlertView_Example-dummy.m in Sources */,
-				CAC2D08F207E27B900BF7A04 /* RSViewControllerAlertView.m in Sources */,
+				CA408B87207E9125005A20FB /* RSViewControllerAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ABC19EEE6B1A24783CB7E90CF651ADD /* RSViewControllerAlertView-dummy.m in Sources */,
+				CA408B8A207E9152005A20FB /* RSViewControllerAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18E4B8976E8A9557630860F1 /* Pods_RSViewControllerAlertView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E3C59948CDDDF0DE659239 /* Pods_RSViewControllerAlertView_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -28,6 +27,7 @@
 		CAC2D0AF207E6FA800BF7A04 /* RSPresentedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0A9207E6FA800BF7A04 /* RSPresentedVC.m */; };
 		CAC2D0B0207E6FA800BF7A04 /* RSDirectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0AA207E6FA800BF7A04 /* RSDirectVC.m */; };
 		CAC2D0B1207E6FA800BF7A04 /* RSRootPushedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0AB207E6FA800BF7A04 /* RSRootPushedVC.m */; };
+		CAC2D0F2207E8E8300BF7A04 /* RSViewControllerAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC2D0F3207E8E8300BF7A04 /* RSViewControllerAlertView.framework */; };
 		D5E827EBCFDD7E03A1A41DE5 /* Pods_RSViewControllerAlertView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEACBE16C084A378B44F5E4D /* Pods_RSViewControllerAlertView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +94,7 @@
 		CAC2D0AB207E6FA800BF7A04 /* RSRootPushedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRootPushedVC.m; sourceTree = "<group>"; };
 		CAC2D0AC207E6FA800BF7A04 /* RSRootPushedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRootPushedVC.h; sourceTree = "<group>"; };
 		CAC2D0AD207E6FA800BF7A04 /* RSPresentedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPresentedVC.h; sourceTree = "<group>"; };
+		CAC2D0F3207E8E8300BF7A04 /* RSViewControllerAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSViewControllerAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +102,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC2D0F2207E8E8300BF7A04 /* RSViewControllerAlertView.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				18E4B8976E8A9557630860F1 /* Pods_RSViewControllerAlertView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +147,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CAC2D0F3207E8E8300BF7A04 /* RSViewControllerAlertView.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -585,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSViewControllerAlertView/RSViewControllerAlertView-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/Headers/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "RSViewControllerAlertView/RSViewControllerAlertView-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -602,7 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSViewControllerAlertView/RSViewControllerAlertView-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/Headers/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "RSViewControllerAlertView/RSViewControllerAlertView-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

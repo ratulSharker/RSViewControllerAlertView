@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RSViewControllerAlertView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Seameless designing using interface builder and integrate with RSViewControllerAlert will give you fully custom alert view, with lots of built in animation. It also provide a finer way to integrate your custom animation in it.'
 
 # This description is used to generate tags and improve search results.
@@ -27,8 +27,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RSViewControllerAlertView/Classes/**/*'
-  
+#  s.source_files = 'RSViewControllerAlertView/Classes/**/*'
+    s.source_files = 'RSViewControllerAlertView/Classes/**/*.m', 'RSViewControllerAlertView.framework/Headers/*.h'
+    s.public_header_files = 'RSViewControllerAlertView.framework/Headers/*.h'
+
   # s.resource_bundles = {
   #   'RSViewControllerAlertView' => ['RSViewControllerAlertView/Assets/*.png']
   # }
