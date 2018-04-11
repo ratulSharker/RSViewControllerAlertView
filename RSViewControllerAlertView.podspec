@@ -9,24 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = 'RSViewControllerAlertView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RSViewControllerAlertView.'
+  s.summary          = 'Seameless designing using interface builder and integrate with RSViewControllerAlert will give you fully custom alert view, with lots of built in animation. It also provide a finer way to integrate your custom animation in it.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description      = "Easily design complex custom AlertView in ios."
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/Ratul Sharker/RSViewControllerAlertView'
+  s.homepage         = 'https://github.com/ratulSharker/ViewController-Alert-View'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ratul Sharker' => 'ratul.sharker@ipay.com.bd' }
-  s.source           = { :git => 'https://github.com/Ratul Sharker/RSViewControllerAlertView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Ratul Sharker' => 'sharker.ratul.08@gmail.com' }
+  s.source           = { :git => 'https://github.com/ratulSharker/ViewController-Alert-View', :branch => 'enabling-pod' }
+  s.social_media_url = 'https://www.facebook.com/ratul.sharker'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,6 +34,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

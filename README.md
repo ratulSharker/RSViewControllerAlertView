@@ -22,7 +22,7 @@ pod 'RSViewControllerAlertView'
 
 ## Author
 
-Ratul Sharker, ratul.sharker@ipay.com.bd
+Ratul Sharker, sharker.ratul.08@gmail.com
 
 ## License
 

@@ -14,7 +14,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* RSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RSAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RSViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,6 +22,12 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CAC2D098207E6F0D00BF7A04 /* custom_alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC2D095207E6F0D00BF7A04 /* custom_alert.storyboard */; };
+		CAC2D099207E6F0D00BF7A04 /* RSCustomAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D096207E6F0D00BF7A04 /* RSCustomAlert.m */; };
+		CAC2D0AE207E6FA800BF7A04 /* RSPushedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0A8207E6FA700BF7A04 /* RSPushedVC.m */; };
+		CAC2D0AF207E6FA800BF7A04 /* RSPresentedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0A9207E6FA800BF7A04 /* RSPresentedVC.m */; };
+		CAC2D0B0207E6FA800BF7A04 /* RSDirectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0AA207E6FA800BF7A04 /* RSDirectVC.m */; };
+		CAC2D0B1207E6FA800BF7A04 /* RSRootPushedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2D0AB207E6FA800BF7A04 /* RSRootPushedVC.m */; };
 		D5E827EBCFDD7E03A1A41DE5 /* Pods_RSViewControllerAlertView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEACBE16C084A378B44F5E4D /* Pods_RSViewControllerAlertView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,10 +41,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CAC2D0B5207E70A300BF7A04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		027BD46BC3A432C820B968B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		027BD46BC3A432C820B968B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		16E5045E74B902CC12C30538 /* Pods-RSViewControllerAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSViewControllerAlertView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSViewControllerAlertView_Example/Pods-RSViewControllerAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2D2DA39FE1CCBCD6B66E500B /* RSViewControllerAlertView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RSViewControllerAlertView.podspec; path = ../RSViewControllerAlertView.podspec; sourceTree = "<group>"; };
+		2D2DA39FE1CCBCD6B66E500B /* RSViewControllerAlertView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSViewControllerAlertView.podspec; path = ../RSViewControllerAlertView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		38B519AEE6D4B35DB73F2E5C /* Pods-RSViewControllerAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSViewControllerAlertView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSViewControllerAlertView_Example/Pods-RSViewControllerAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		43E3C59948CDDDF0DE659239 /* Pods_RSViewControllerAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSViewControllerAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D483AFF64B2B3BBB87F9834 /* Pods-RSViewControllerAlertView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSViewControllerAlertView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSViewControllerAlertView_Tests/Pods-RSViewControllerAlertView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,8 +71,6 @@
 		6003F59B195388D20070C39A /* RSViewControllerAlertView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSViewControllerAlertView-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* RSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* RSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* RSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* RSViewControllerAlertView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSViewControllerAlertView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -66,7 +82,18 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEACBE16C084A378B44F5E4D /* Pods_RSViewControllerAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSViewControllerAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE758ADAA43BCAF525DA79A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AFE758ADAA43BCAF525DA79A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CAC2D095207E6F0D00BF7A04 /* custom_alert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = custom_alert.storyboard; sourceTree = "<group>"; };
+		CAC2D096207E6F0D00BF7A04 /* RSCustomAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCustomAlert.m; sourceTree = "<group>"; };
+		CAC2D097207E6F0D00BF7A04 /* RSCustomAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCustomAlert.h; sourceTree = "<group>"; };
+		CAC2D0A6207E6FA700BF7A04 /* RSDirectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDirectVC.h; sourceTree = "<group>"; };
+		CAC2D0A7207E6FA700BF7A04 /* RSPushedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPushedVC.h; sourceTree = "<group>"; };
+		CAC2D0A8207E6FA700BF7A04 /* RSPushedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPushedVC.m; sourceTree = "<group>"; };
+		CAC2D0A9207E6FA800BF7A04 /* RSPresentedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPresentedVC.m; sourceTree = "<group>"; };
+		CAC2D0AA207E6FA800BF7A04 /* RSDirectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDirectVC.m; sourceTree = "<group>"; };
+		CAC2D0AB207E6FA800BF7A04 /* RSRootPushedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRootPushedVC.m; sourceTree = "<group>"; };
+		CAC2D0AC207E6FA800BF7A04 /* RSRootPushedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRootPushedVC.h; sourceTree = "<group>"; };
+		CAC2D0AD207E6FA800BF7A04 /* RSPresentedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPresentedVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,13 +159,20 @@
 		6003F593195388D20070C39A /* Example for RSViewControllerAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				CAC2D094207E6F0D00BF7A04 /* CustomAlert */,
+				CAC2D0A6207E6FA700BF7A04 /* RSDirectVC.h */,
+				CAC2D0AA207E6FA800BF7A04 /* RSDirectVC.m */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				CAC2D0AD207E6FA800BF7A04 /* RSPresentedVC.h */,
+				CAC2D0A9207E6FA800BF7A04 /* RSPresentedVC.m */,
+				CAC2D0A7207E6FA700BF7A04 /* RSPushedVC.h */,
+				CAC2D0A8207E6FA700BF7A04 /* RSPushedVC.m */,
+				CAC2D0AC207E6FA800BF7A04 /* RSRootPushedVC.h */,
+				CAC2D0AB207E6FA800BF7A04 /* RSRootPushedVC.m */,
 				6003F59C195388D20070C39A /* RSAppDelegate.h */,
 				6003F59D195388D20070C39A /* RSAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* RSViewController.h */,
-				6003F5A6195388D20070C39A /* RSViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for RSViewControllerAlertView";
@@ -196,6 +230,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CAC2D094207E6F0D00BF7A04 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				CAC2D095207E6F0D00BF7A04 /* custom_alert.storyboard */,
+				CAC2D097207E6F0D00BF7A04 /* RSCustomAlert.h */,
+				CAC2D096207E6F0D00BF7A04 /* RSCustomAlert.m */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,6 +253,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				7F622F1FEB67C249B0CA1527 /* [CP] Embed Pods Frameworks */,
 				F10635716BD252791DB62BBE /* [CP] Copy Pods Resources */,
+				CAC2D0B5207E70A300BF7A04 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC2D098207E6F0D00BF7A04 /* custom_alert.storyboard in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -404,8 +450,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* RSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* RSViewController.m in Sources */,
+				CAC2D0AF207E6FA800BF7A04 /* RSPresentedVC.m in Sources */,
+				CAC2D0AE207E6FA800BF7A04 /* RSPushedVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				CAC2D0B0207E6FA800BF7A04 /* RSDirectVC.m in Sources */,
+				CAC2D099207E6F0D00BF7A04 /* RSCustomAlert.m in Sources */,
+				CAC2D0B1207E6FA800BF7A04 /* RSRootPushedVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +585,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSViewControllerAlertView/RSViewControllerAlertView-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/Headers/**";
 				INFOPLIST_FILE = "RSViewControllerAlertView/RSViewControllerAlertView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,7 +602,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSViewControllerAlertView/RSViewControllerAlertView-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/Headers/**";
 				INFOPLIST_FILE = "RSViewControllerAlertView/RSViewControllerAlertView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

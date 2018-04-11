@@ -6,6 +6,5 @@ target 'RSViewControllerAlertView_Example' do
   target 'RSViewControllerAlertView_Tests' do
     inherit! :search_paths
 
-    
   end
 end
