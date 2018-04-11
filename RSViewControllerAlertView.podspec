@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = "Easily design complex custom AlertView in ios."
 
-  s.homepage         = 'https://github.com/ratulSharker/ViewController-Alert-View'
+  s.homepage         = 'https://github.com/ratulSharker/RSViewControllerAlertView.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ratul Sharker' => 'sharker.ratul.08@gmail.com' }
-  s.source           = { :git => 'https://github.com/ratulSharker/ViewController-Alert-View', :branch => 'enabling-pod' }
+  s.source           = { :git => 'https://github.com/ratulSharker/RSViewControllerAlertView.git', :branch => 'master' }
   s.social_media_url = 'https://www.facebook.com/ratul.sharker'
 
   s.ios.deployment_target = '8.0'
