@@ -1,0 +1,6 @@
+framework module RSViewControllerAlertView {
+  umbrella header "RSViewControllerAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}
