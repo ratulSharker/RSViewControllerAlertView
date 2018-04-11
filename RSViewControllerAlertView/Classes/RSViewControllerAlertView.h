@@ -5,7 +5,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RSViewControllerAlertViewProtocol.h"
+#import <RSViewControllerAlertView/RSViewControllerAlertViewProtocol.h>
 
 /*______________________________________________________
  |                                                      |

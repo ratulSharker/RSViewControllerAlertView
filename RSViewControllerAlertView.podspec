@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
 #  s.source_files = 'RSViewControllerAlertView/Classes/**/*'
     s.source_files = 'RSViewControllerAlertView/Classes/**/*.m', 'RSViewControllerAlertView.framework/Headers/*.h'
-    s.public_header_files = 'RSViewControllerAlertView.framework/Headers/*.h'
+#    s.public_header_files = 'RSViewControllerAlertView.framework/Headers/*.h'
 
   # s.resource_bundles = {
   #   'RSViewControllerAlertView' => ['RSViewControllerAlertView/Assets/*.png']

@@ -3,8 +3,8 @@
 //
 //  Created by Ratul Sharker on 1/28/16.
 //
-// MARA KHA
-#import <RSViewControllerAlertView.h>
+// MARA KHA2
+#import <RSViewControllerAlertView/RSViewControllerAlertView.h>
 
 #define VIEWCONTROLLER_TIMER_USERINFO_ANIMATION_KEY     @"timer.animation.key"
 #define VIEWCONTROLLER_TIMER_USERINFO_COMPLETION_KEY    @"timer.completion.key"

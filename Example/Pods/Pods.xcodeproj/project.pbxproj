@@ -9,29 +9,13 @@
 /* Begin PBXBuildFile section */
 		09BF48DF7F3FC75CD397B26F5F01D515 /* Pods-RSViewControllerAlertView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6CDEA12ADAB330726EF77AB97416A5 /* Pods-RSViewControllerAlertView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		279628BFADF697B1EF401E2A9CFAA766 /* RSViewControllerAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C38C6937755EC08FD2A52FB5B8CEC620 /* RSViewControllerAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		492468CD32A48815F55A69337D93C246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		569F62D8EBFA6B15E84562177F70219F /* Pods-RSViewControllerAlertView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE245EDEA7BFA3BC05762A52DAF763 /* Pods-RSViewControllerAlertView_Tests-dummy.m */; };
-		898482BA9B2B4ACEE9C2586354A8DE40 /* Pods-RSViewControllerAlertView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405404404C67DCF476C1FD392704EAAE /* Pods-RSViewControllerAlertView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C16106034D0DBD9B482CA830BD6AC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9DD270D1C07E1360A70D1BE3F64C6B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B38FA845EF4FDD99EA4329009855D3C0 /* Pods-RSViewControllerAlertView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 551E6F22D7099D405430268F01CBD57E /* Pods-RSViewControllerAlertView_Example-dummy.m */; };
-		CA408B85207E9125005A20FB /* RSViewControllerAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B82207E9124005A20FB /* RSViewControllerAlertView.h */; };
-		CA408B86207E9125005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B83207E9124005A20FB /* RSViewControllerAlertViewProtocol.h */; };
-		CA408B87207E9125005A20FB /* RSViewControllerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA408B84207E9124005A20FB /* RSViewControllerAlertView.m */; };
 		CA408B88207E9145005A20FB /* RSViewControllerAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B82207E9124005A20FB /* RSViewControllerAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA408B89207E9145005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA408B83207E9124005A20FB /* RSViewControllerAlertViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA408B8A207E9152005A20FB /* RSViewControllerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA408B84207E9124005A20FB /* RSViewControllerAlertView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B03467D6F3A5B01A62B9DB7C82F5CACF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98D23FDFEC72D98AA30CA41BADC19B91;
-			remoteInfo = RSViewControllerAlertView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A60D812FD1EC3782252DA0AE1D07E4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -48,7 +32,6 @@
 		6458752C9104DB3F5CCF0E759099A136 /* RSViewControllerAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSViewControllerAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7061474DF851E35AE8EB63E9865C44CC /* Pods-RSViewControllerAlertView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSViewControllerAlertView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		77D157AEFDF84B9AE7256AB3C9C80680 /* Pods_RSViewControllerAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSViewControllerAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E214D65DFFA9D6CCF6F258498B6FFDB /* Pods-RSViewControllerAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSViewControllerAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9574B2264A7E6CFE445F0E7251EF5AB0 /* Pods-RSViewControllerAlertView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSViewControllerAlertView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,14 +72,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1C67FD740B67B86E43DAC985FFB3460 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				492468CD32A48815F55A69337D93C246 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,7 +109,6 @@
 		630493426036B6824A5BC5F0C4B7DE23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77D157AEFDF84B9AE7256AB3C9C80680 /* Pods_RSViewControllerAlertView_Example.framework */,
 				EEE16C452C2CB7FB85B4E31F16F6901E /* Pods_RSViewControllerAlertView_Tests.framework */,
 				6458752C9104DB3F5CCF0E759099A136 /* RSViewControllerAlertView.framework */,
 			);
@@ -238,16 +212,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1CD962B4B82573DC0CDDD527A1CD4AA4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA408B85207E9125005A20FB /* RSViewControllerAlertView.h in Headers */,
-				898482BA9B2B4ACEE9C2586354A8DE40 /* Pods-RSViewControllerAlertView_Example-umbrella.h in Headers */,
-				CA408B86207E9125005A20FB /* RSViewControllerAlertViewProtocol.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2C5223FBAEEF1B2C4328A5A1496D0523 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,24 +267,6 @@
 			productReference = 6458752C9104DB3F5CCF0E759099A136 /* RSViewControllerAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		99B63D0440D0D698ED1859E28C0AB540 /* Pods-RSViewControllerAlertView_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 90FDFE27D15E24711B93EBCB3E07C115 /* Build configuration list for PBXNativeTarget "Pods-RSViewControllerAlertView_Example" */;
-			buildPhases = (
-				3F8337599698B92823FD0B7BF58525B7 /* Sources */,
-				C1C67FD740B67B86E43DAC985FFB3460 /* Frameworks */,
-				1CD962B4B82573DC0CDDD527A1CD4AA4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98D167DE33EF87846B4FC4B78A552FC3 /* PBXTargetDependency */,
-			);
-			name = "Pods-RSViewControllerAlertView_Example";
-			productName = "Pods-RSViewControllerAlertView_Example";
-			productReference = 77D157AEFDF84B9AE7256AB3C9C80680 /* Pods_RSViewControllerAlertView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -342,7 +288,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99B63D0440D0D698ED1859E28C0AB540 /* Pods-RSViewControllerAlertView_Example */,
 				6149CC359EEC290FAF57C76686A351FF /* Pods-RSViewControllerAlertView_Tests */,
 				98D23FDFEC72D98AA30CA41BADC19B91 /* RSViewControllerAlertView */,
 			);
@@ -350,15 +295,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F8337599698B92823FD0B7BF58525B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B38FA845EF4FDD99EA4329009855D3C0 /* Pods-RSViewControllerAlertView_Example-dummy.m in Sources */,
-				CA408B87207E9125005A20FB /* RSViewControllerAlertView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6224A766561BF7520C0FE6D07C29655D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,15 +312,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		98D167DE33EF87846B4FC4B78A552FC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RSViewControllerAlertView;
-			target = 98D23FDFEC72D98AA30CA41BADC19B91 /* RSViewControllerAlertView */;
-			targetProxy = B03467D6F3A5B01A62B9DB7C82F5CACF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		029A519FE14C24EB7192AA5F6D4359AD /* Release */ = {
@@ -632,71 +559,6 @@
 			};
 			name = Release;
 		};
-		D8232E7B8D33718D1E30B8E8312FF47B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC56B60BFA4EB5F5604724B2564A2669 /* Pods-RSViewControllerAlertView_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RSViewControllerAlertView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RSViewControllerAlertView_Example/Pods-RSViewControllerAlertView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RSViewControllerAlertView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E1D161F8370486084359D8758A12B56E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E214D65DFFA9D6CCF6F258498B6FFDB /* Pods-RSViewControllerAlertView_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RSViewControllerAlertView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RSViewControllerAlertView_Example/Pods-RSViewControllerAlertView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RSViewControllerAlertView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -723,15 +585,6 @@
 			buildConfigurations = (
 				4A8C58FE7A540C1F03AD5ADAB8DD78F1 /* Debug */,
 				029A519FE14C24EB7192AA5F6D4359AD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		90FDFE27D15E24711B93EBCB3E07C115 /* Build configuration list for PBXNativeTarget "Pods-RSViewControllerAlertView_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8232E7B8D33718D1E30B8E8312FF47B /* Debug */,
-				E1D161F8370486084359D8758A12B56E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
