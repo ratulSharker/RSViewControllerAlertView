@@ -29,7 +29,7 @@ typedef NS_ENUM (NSUInteger, PredefinedAnimation)
  |  automatically hideout or showup methods.            |
  |______________________________________________________|
  */
-typedef void (^RSViewControllerAlertViewCompletionBlok)();
+typedef void (^RSViewControllerAlertViewCompletionBlok)(void);
 
 
 /*______________________________________________________

@@ -1,5 +1,5 @@
 //
-//  ViewControllerAlertView.m
+//  RSViewControllerAlertView.m
 //
 //  Created by Ratul Sharker on 1/28/16.
 //
@@ -45,7 +45,7 @@
     {
         //call delegate that this view controller is about to show
         if(self.vcavDelegate &&
-           [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillAppear:))])
+           [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewWillAppear:))])
         {
             [self.vcavDelegate RSViewControllerAlertViewWillAppear:self];
         }
@@ -149,11 +149,7 @@
         self.view.backgroundColor = [UIColor clearColor];
         [alertHolder.view addSubview:self.view];
         
-        [UIView animateWithDuration:1.0
-                              delay:0.1
-             usingSpringWithDamping:0.4
-              initialSpringVelocity:0.1
-                            options:UIViewAnimationCurveLinear
+        [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveLinear
                          animations:^{
                              
                              self.view.frame = originalFrame;
@@ -169,7 +165,7 @@
                                               }];
                              
                              if(self.vcavDelegate &&
-                                [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDidAppear:))]
+                                [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewDidAppear:))]
                                 )
                              {
                                  [self.vcavDelegate RSViewControllerAlertViewDidAppear:self];
@@ -185,7 +181,7 @@
         {
             //call delegate that this view controller is about to hide
             if(self.vcavDelegate &&
-               [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillDisappear:))]
+               [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewWillDisappear:))]
                )
             {
                 [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
@@ -196,7 +192,7 @@
             
             self.view.backgroundColor = [UIColor clearColor];
             
-            [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationCurveLinear animations:^{
+            [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveLinear animations:^{
                 
                 self.view.frame = animatedFrame;
                 
@@ -209,7 +205,7 @@
                     
                     //call delegate that this view controller is shown
                     if(self.vcavDelegate &&
-                       [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDiddisappear:))]
+                       [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewDiddisappear:))]
                        )
                     {
                         [self.vcavDelegate RSViewControllerAlertViewDiddisappear:self];
@@ -249,7 +245,7 @@
                              //call delegate that this view controller is shown
                              
                              if(self.vcavDelegate &&
-                                [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDidAppear:))]
+                                [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewDidAppear:))]
                                 )
                              {
                                  [self.vcavDelegate RSViewControllerAlertViewDidAppear:self];
@@ -264,7 +260,7 @@
         {
             //call delegate that this view controller is about to hide
             if(self.vcavDelegate &&
-               [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillDisappear:))]
+               [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewWillDisappear:))]
                )
             {
                 [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
@@ -284,7 +280,7 @@
                                      
                                      //call delegate that this view controller is shown
                                      if(self.vcavDelegate &&
-                                        [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDiddisappear:))]
+                                        [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewDiddisappear:))]
                                         )
                                      {
                                          [self.vcavDelegate RSViewControllerAlertViewDiddisappear:self];
