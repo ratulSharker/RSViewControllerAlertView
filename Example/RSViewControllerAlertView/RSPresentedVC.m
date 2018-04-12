@@ -43,13 +43,13 @@
 -(IBAction)onShowOnTopOfPresentedVCPressed:(id)sender
 {
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self WithAnimation:SHOW_WITH_FADE_IN];
+    [myAlert showOn:self WithAnimation:PredefinedAnimation_ShowWithFadeIn];
 }
 
 -(IBAction)onShowOnTopOfNavigationOfPresentedVCPressed:(id)sender
 {
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self.parentViewController WithAnimation:SHOW_WITH_DAMPING];
+    [myAlert showOn:self.parentViewController WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 

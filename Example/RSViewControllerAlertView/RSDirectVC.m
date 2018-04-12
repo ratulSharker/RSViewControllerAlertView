@@ -41,15 +41,15 @@
 {
     NSLog(@"show on");
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self WithAnimation:SHOW_WITH_DAMPING];
+    [myAlert showOn:self WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 -(IBAction)onShowOnTopOfTabbar:(id)sender
 {
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self.parentViewController WithAnimation:SHOW_WITH_DAMPING];
+    [myAlert showOn:self.parentViewController WithAnimation:PredefinedAnimation_ShowWithDamping];
     
-    [myAlert hideAutomaticallyAfter:3.0 withAnimation:HIDE_WITH_DAMPING onComplete:^{
+    [myAlert hideAutomaticallyAfter:3.0 withAnimation:PredefinedAnimation_HideWithDamping onComplete:^{
         NSLog(@"hiding done");
     }];
 }

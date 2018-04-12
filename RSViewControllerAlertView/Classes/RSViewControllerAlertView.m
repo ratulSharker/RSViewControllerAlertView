@@ -3,30 +3,21 @@
 //
 //  Created by Ratul Sharker on 1/28/16.
 //
-// MARA KHA2
 #import <RSViewControllerAlertView/RSViewControllerAlertView.h>
 
 #define VIEWCONTROLLER_TIMER_USERINFO_ANIMATION_KEY     @"timer.animation.key"
 #define VIEWCONTROLLER_TIMER_USERINFO_COMPLETION_KEY    @"timer.completion.key"
 
 @interface RSViewControllerAlertView ()
-
-@end
+    
+    @end
 
 
 @implementation RSViewControllerAlertView
-{
-    UIViewController *currentAlertHolder;
+    {
+        UIViewController *currentAlertHolder;
+    }
     
-    
-    //
-    //
-    //
-    //
-    //enum PREDEFINED_ANIMATION anim;
-    
-}
-
 #pragma mark life-cycle methods
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,299 +25,300 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 }
-
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
+    
+    
 #pragma mark public method
 +(RSViewControllerAlertView*)makeAnAlert:(NSString*)storyboardName
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
-                                                         bundle:[NSBundle mainBundle]];
-    
-    return (RSViewControllerAlertView*)[storyboard instantiateInitialViewController];
-}
-
--(void)showOn:(UIViewController*)alertHolder WithAnimation:(enum PREDEFINED_ANIMATION)anim
-{
-    //call delegate that this view controller is about to show
-    if(self.vcavDelegate &&
-       [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillAppear:))])
     {
-        [self.vcavDelegate RSViewControllerAlertViewWillAppear:self];
-    }
-    
-    
-    currentAlertHolder = alertHolder;
-    
-    [alertHolder addChildViewController:self];
-    [self didMoveToParentViewController:alertHolder];
-    
-    if([alertHolder isKindOfClass:[UINavigationController class]])
-    {
-        [super viewWillAppear:YES];
-    }
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
+                                                             bundle:[NSBundle mainBundle]];
         
-    switch(anim)
+        return (RSViewControllerAlertView*)[storyboard instantiateInitialViewController];
+    }
+    
+-(void)showOn:(UIViewController*)alertHolder WithAnimation:(PredefinedAnimation)anim
     {
-        case SHOW_WITH_DAMPING:
+        //call delegate that this view controller is about to show
+        if(self.vcavDelegate &&
+           [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillAppear:))])
         {
-            [self showOnWithDamping:alertHolder];
+            [self.vcavDelegate RSViewControllerAlertViewWillAppear:self];
         }
+        
+        
+        currentAlertHolder = alertHolder;
+        
+        [alertHolder addChildViewController:self];
+        [self didMoveToParentViewController:alertHolder];
+        
+        if([alertHolder isKindOfClass:[UINavigationController class]])
+        {
+            [super viewWillAppear:YES];
+        }
+        
+        switch(anim)
+        {
+            case PredefinedAnimation_ShowWithDamping:
+            {
+                [self showOnWithDamping:alertHolder];
+            }
             break;
-        case SHOW_WITH_FADE_IN:
-        {
-            [self showOnWithFadeIn:alertHolder];
-        }
+            case PredefinedAnimation_ShowWithFadeIn:
+            {
+                [self showOnWithFadeIn:alertHolder];
+            }
             break;
             
-        case HIDE_WITH_DAMPING:
-        case HIDE_WITH_FADE_OUT:
-        default:
+            case PredefinedAnimation_HideWithDamping:
+            case PredefinedAnimation_HideWithFadeOut:
+            default:
+            {
+                NSLog(@"WRONG ANIMATION PARAMTER PASSED");
+            }
+        }
+        
+    }
+    
+-(void)hideWithAnimation:(PredefinedAnimation)anim
+              onComplete:(RSViewControllerAlertViewCompletionBlok)completion
+    {
+        switch(anim)
         {
-            NSLog(@"WRONG ANIMATION PARAMTER PASSED");
+            case PredefinedAnimation_HideWithDamping:
+            {
+                [self hideWithDampingWithCompletion:completion];
+            }
+            break;
+            case PredefinedAnimation_HideWithFadeOut:
+            {
+                [self hideWithFadeOut:completion];
+            }
+            break;
+            
+            case PredefinedAnimation_ShowWithDamping:
+            case PredefinedAnimation_ShowWithFadeIn:
+            default:
+            {
+                NSLog(@"WRONG ANIMATION PARAMTER PASSED");
+            }
         }
     }
     
-}
-
--(void)hideWithAnimation:(enum PREDEFINED_ANIMATION)anim
-              onComplete:(RSViewControllerAlertViewCompletionBlok)completion
-{
-    switch(anim)
-    {
-        case HIDE_WITH_DAMPING:
-        {
-            [self hideWithDampingWithCompletion:completion];
-        }
-            break;
-        case HIDE_WITH_FADE_OUT:
-        {
-            [self hideWithFadeOut:completion];
-        }
-            break;
-            
-        case SHOW_WITH_DAMPING:
-        case SHOW_WITH_FADE_IN:
-        default:
-        {
-            NSLog(@"WRONG ANIMATION PARAMTER PASSED");
-        }
-    }
-}
-
 -(void)hideAutomaticallyAfter:(NSTimeInterval)hidingTime
-                withAnimation:(enum PREDEFINED_ANIMATION)anim
+                withAnimation:(PredefinedAnimation)anim
                    onComplete:(RSViewControllerAlertViewCompletionBlok)completion
-{
-    [NSTimer scheduledTimerWithTimeInterval:hidingTime
-                                     target:self
-                                   selector:@selector(hidingTimerExpired:)
-                                   userInfo:@{
-                                                VIEWCONTROLLER_TIMER_USERINFO_ANIMATION_KEY: [NSNumber numberWithInt:anim],
-                                                VIEWCONTROLLER_TIMER_USERINFO_COMPLETION_KEY : completion
-                                              }
-                                    repeats:NO];
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
+    {
+        [NSTimer scheduledTimerWithTimeInterval:hidingTime
+                                         target:self
+                                       selector:@selector(hidingTimerExpired:)
+                                       userInfo:@{
+                                                  VIEWCONTROLLER_TIMER_USERINFO_ANIMATION_KEY: [NSNumber numberWithInt:anim],
+                                                  VIEWCONTROLLER_TIMER_USERINFO_COMPLETION_KEY : completion
+                                                  }
+                                        repeats:NO];
+    }
+    
+    /*
+     #pragma mark - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     // Get the new view controller using [segue destinationViewController].
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 #pragma mark private factory default animator function
 -(void)showOnWithDamping:(UIViewController*)alertHolder
-{
-    //set initial frame
-    CGRect originalFrame = self.view.frame;
-    CGRect initialFrame = CGRectMake(originalFrame.origin.x,
-                                     originalFrame.origin.y,
-                                     originalFrame.size.width,
-                                     originalFrame.size.height);
-    
-    initialFrame.origin.y = alertHolder.view.bounds.size.height;
-    
-    self.view.frame = initialFrame;
-    self.view.backgroundColor = [UIColor clearColor];
-    [alertHolder.view addSubview:self.view];
-    
-    [UIView animateWithDuration:1.0
-                          delay:0.1
-         usingSpringWithDamping:0.4
-          initialSpringVelocity:0.1
-                        options:UIViewAnimationCurveLinear
-                     animations:^{
-                         
-                         self.view.frame = originalFrame;
-                         
-                     } completion:^(BOOL finshed){
-                         //call delegate that this view controller is shown
-                         [UIView animateWithDuration:0.3
-                                          animations:^{
-                                              self.view.backgroundColor = [UIColor colorWithRed:50.0/255.0
-                                                                                          green:50.0/255.0
-                                                                                           blue:50.0/255.0
-                                                                                          alpha:0.85];
-                                          }];
-                         
-                         if(self.vcavDelegate &&
-                            [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDidAppear:))]
-                            )
-                         {
-                             [self.vcavDelegate RSViewControllerAlertViewDidAppear:self];
-                             
-                         }
-                     }];
-}
-
--(void)hideWithDampingWithCompletion:(void(^)(void))completion
-{
-    
-    if(currentAlertHolder)
     {
-        //call delegate that this view controller is about to hide
-        if(self.vcavDelegate &&
-           [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillDisappear:))]
-           )
-        {
-            [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
-        }
+        //set initial frame
+        CGRect originalFrame = self.view.frame;
+        CGRect initialFrame = CGRectMake(originalFrame.origin.x,
+                                         originalFrame.origin.y,
+                                         originalFrame.size.width,
+                                         originalFrame.size.height);
         
-        CGRect animatedFrame = self.view.frame;
-        animatedFrame.origin.y = currentAlertHolder.view.frame.size.height;
+        initialFrame.origin.y = alertHolder.view.bounds.size.height;
         
+        self.view.frame = initialFrame;
         self.view.backgroundColor = [UIColor clearColor];
+        [alertHolder.view addSubview:self.view];
         
-        [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationCurveLinear animations:^{
-            
-            self.view.frame = animatedFrame;
-            
-        } completion:^(BOOL finished) {
-            if(finished)
-            {
-                [self removeFromParentViewController];
-                [self.view removeFromSuperview];
-                [self willMoveToParentViewController:nil];
-                
-                //call delegate that this view controller is shown
-                if(self.vcavDelegate &&
-                   [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDiddisappear:))]
-                   )
-                {
-                    [self.vcavDelegate RSViewControllerAlertViewDiddisappear:self];
-                }
-                
-                //  if there is something to do in completion
-                //  then execute it, otherwise just ignore
-                if(completion)
-                {
-                    completion();
-                }
-                
-            }
-        }];
-    }
-}
-
--(void)showOnWithFadeIn:(UIViewController*)alertHolder
-{
-    //set initial frame
-    CGRect originalFrame = self.view.frame;
-    
-    self.view.frame = originalFrame;
-    self.view.backgroundColor = [UIColor colorWithRed:50.0/255.0
-                                                green:50.0/255.0
-                                                 blue:50.0/255.0
-                                                alpha:0.85];
-    self.view.alpha = 0.0;
-    [alertHolder.view addSubview:self.view];
-    
-    [UIView animateWithDuration:1.0
-                     animations:^{
-                         
-                         self.view.alpha = 1.0;
-                         
-                     } completion:^(BOOL finshed){
-                         //call delegate that this view controller is shown
-               
-                         if(self.vcavDelegate &&
-                            [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDidAppear:))]
-                            )
-                         {
-                             [self.vcavDelegate RSViewControllerAlertViewDidAppear:self];
+        [UIView animateWithDuration:1.0
+                              delay:0.1
+             usingSpringWithDamping:0.4
+              initialSpringVelocity:0.1
+                            options:UIViewAnimationCurveLinear
+                         animations:^{
                              
-                         }
-                     }];
-}
-
--(void)hideWithFadeOut:(void(^)(void))completion
-{
-    if(currentAlertHolder)
+                             self.view.frame = originalFrame;
+                             
+                         } completion:^(BOOL finshed){
+                             //call delegate that this view controller is shown
+                             [UIView animateWithDuration:0.3
+                                              animations:^{
+                                                  self.view.backgroundColor = [UIColor colorWithRed:50.0/255.0
+                                                                                              green:50.0/255.0
+                                                                                               blue:50.0/255.0
+                                                                                              alpha:0.85];
+                                              }];
+                             
+                             if(self.vcavDelegate &&
+                                [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDidAppear:))]
+                                )
+                             {
+                                 [self.vcavDelegate RSViewControllerAlertViewDidAppear:self];
+                                 
+                             }
+                         }];
+    }
+    
+-(void)hideWithDampingWithCompletion:(void(^)(void))completion
     {
-        //call delegate that this view controller is about to hide
-        if(self.vcavDelegate &&
-           [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillDisappear:))]
-           )
+        
+        if(currentAlertHolder)
         {
-            [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
+            //call delegate that this view controller is about to hide
+            if(self.vcavDelegate &&
+               [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillDisappear:))]
+               )
+            {
+                [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
+            }
+            
+            CGRect animatedFrame = self.view.frame;
+            animatedFrame.origin.y = currentAlertHolder.view.frame.size.height;
+            
+            self.view.backgroundColor = [UIColor clearColor];
+            
+            [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationCurveLinear animations:^{
+                
+                self.view.frame = animatedFrame;
+                
+            } completion:^(BOOL finished) {
+                if(finished)
+                {
+                    [self removeFromParentViewController];
+                    [self.view removeFromSuperview];
+                    [self willMoveToParentViewController:nil];
+                    
+                    //call delegate that this view controller is shown
+                    if(self.vcavDelegate &&
+                       [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDiddisappear:))]
+                       )
+                    {
+                        [self.vcavDelegate RSViewControllerAlertViewDiddisappear:self];
+                    }
+                    
+                    //  if there is something to do in completion
+                    //  then execute it, otherwise just ignore
+                    if(completion)
+                    {
+                        completion();
+                    }
+                    
+                }
+            }];
         }
+    }
+    
+-(void)showOnWithFadeIn:(UIViewController*)alertHolder
+    {
+        //set initial frame
+        CGRect originalFrame = self.view.frame;
+        
+        self.view.frame = originalFrame;
+        self.view.backgroundColor = [UIColor colorWithRed:50.0/255.0
+                                                    green:50.0/255.0
+                                                     blue:50.0/255.0
+                                                    alpha:0.85];
+        self.view.alpha = 0.0;
+        [alertHolder.view addSubview:self.view];
         
         [UIView animateWithDuration:1.0
                          animations:^{
-            
-                             self.view.alpha = 0.0;
-            
-        } completion:^(BOOL finished) {
-            if(finished)
-            {
-                [self removeFromParentViewController];
-                [self.view removeFromSuperview];
-                [self willMoveToParentViewController:nil];
-                
-                //call delegate that this view controller is shown
-                if(self.vcavDelegate &&
-                   [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDiddisappear:))]
-                   )
-                {
-                    [self.vcavDelegate RSViewControllerAlertViewDiddisappear:self];
-                }
-                
-                //  if there is something to do in completion
-                //  then execute it, otherwise just ignore
-                if(completion)
-                {
-                    completion();
-                }
-            }
-        }];
+                             
+                             self.view.alpha = 1.0;
+                             
+                         } completion:^(BOOL finshed){
+                             //call delegate that this view controller is shown
+                             
+                             if(self.vcavDelegate &&
+                                [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDidAppear:))]
+                                )
+                             {
+                                 [self.vcavDelegate RSViewControllerAlertViewDidAppear:self];
+                                 
+                             }
+                         }];
     }
-}
-
+    
+-(void)hideWithFadeOut:(void(^)(void))completion
+    {
+        if(currentAlertHolder)
+        {
+            //call delegate that this view controller is about to hide
+            if(self.vcavDelegate &&
+               [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewWillDisappear:))]
+               )
+            {
+                [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
+            }
+            
+            [UIView animateWithDuration:1.0
+                             animations:^{
+                                 
+                                 self.view.alpha = 0.0;
+                                 
+                             } completion:^(BOOL finished) {
+                                 if(finished)
+                                 {
+                                     [self removeFromParentViewController];
+                                     [self.view removeFromSuperview];
+                                     [self willMoveToParentViewController:nil];
+                                     
+                                     //call delegate that this view controller is shown
+                                     if(self.vcavDelegate &&
+                                        [self.vcavDelegate respondsToSelector:(@selector(viewControllerAlertViewDiddisappear:))]
+                                        )
+                                     {
+                                         [self.vcavDelegate RSViewControllerAlertViewDiddisappear:self];
+                                     }
+                                     
+                                     //  if there is something to do in completion
+                                     //  then execute it, otherwise just ignore
+                                     if(completion)
+                                     {
+                                         completion();
+                                     }
+                                 }
+                             }];
+        }
+    }
+    
 #pragma mark Timer helper
 -(void)hidingTimerExpired:(NSTimer*)timer
-{
-    if(timer &&
-       timer.userInfo)
     {
-        
-        enum PREDEFINED_ANIMATION anim = [timer.userInfo[VIEWCONTROLLER_TIMER_USERINFO_ANIMATION_KEY] intValue];
-        RSViewControllerAlertViewCompletionBlok completionBlock = timer.userInfo[VIEWCONTROLLER_TIMER_USERINFO_COMPLETION_KEY];
-        
-        //  now time to hide
-        [self hideWithAnimation:anim onComplete:completionBlock];
-    
-        //  get rid of the timer
-        [timer invalidate];
-        timer = nil;
+        if(timer &&
+           timer.userInfo)
+        {
+            
+            PredefinedAnimation anim = [timer.userInfo[VIEWCONTROLLER_TIMER_USERINFO_ANIMATION_KEY] intValue];
+            RSViewControllerAlertViewCompletionBlok completionBlock = timer.userInfo[VIEWCONTROLLER_TIMER_USERINFO_COMPLETION_KEY];
+            
+            //  now time to hide
+            [self hideWithAnimation:anim onComplete:completionBlock];
+            
+            //  get rid of the timer
+            [timer invalidate];
+            timer = nil;
+        }
     }
-}
+    
+    @end
 
-@end

@@ -38,19 +38,19 @@
 -(IBAction)showOnTopOfPushedVCPressed:(id)sender
 {
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self WithAnimation:SHOW_WITH_DAMPING];
+    [myAlert showOn:self WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 -(IBAction)showOnTopOfNavigationOfPushedVCPressed:(id)sender
 {
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self.parentViewController WithAnimation:SHOW_WITH_DAMPING];
+    [myAlert showOn:self.parentViewController WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 -(IBAction)showOnTopOfTabbarControllerPressed:(id)sender
 {
     RSCustomAlert *myAlert = (RSCustomAlert*) [RSCustomAlert makeAnAlert:@"custom_alert"];
-    [myAlert showOn:self.parentViewController.parentViewController WithAnimation:SHOW_WITH_DAMPING];
+    [myAlert showOn:self.parentViewController.parentViewController WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 @end

@@ -44,13 +44,13 @@
 -(IBAction)onShowAlertOnTopRootVCPressed:(id)sender
 {
     RSCustomAlert *customAlert = (RSCustomAlert*)[RSCustomAlert makeAnAlert:@"custom_alert"];
-    [customAlert showOn:self WithAnimation:SHOW_WITH_DAMPING];
+    [customAlert showOn:self WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 -(IBAction)onShowAlertOnTopRootNavPressed:(id)sender
 {
     RSCustomAlert *customAlert = (RSCustomAlert*)[RSCustomAlert makeAnAlert:@"custom_alert"];
-    [customAlert showOn:self.parentViewController WithAnimation:SHOW_WITH_DAMPING];
+    [customAlert showOn:self.parentViewController WithAnimation:PredefinedAnimation_ShowWithDamping];
 }
 
 @end
