@@ -201,7 +201,7 @@
                 {
                     [self removeFromParentViewController];
                     [self.view removeFromSuperview];
-                    [self willMoveToParentViewController:nil];
+                    [self didMoveToParentViewController:nil]
                     
                     //call delegate that this view controller is shown
                     if(self.vcavDelegate &&
@@ -276,7 +276,7 @@
                                  {
                                      [self removeFromParentViewController];
                                      [self.view removeFromSuperview];
-                                     [self willMoveToParentViewController:nil];
+                                     [self didMoveToParentViewController:nil];
                                      
                                      //call delegate that this view controller is shown
                                      if(self.vcavDelegate &&
