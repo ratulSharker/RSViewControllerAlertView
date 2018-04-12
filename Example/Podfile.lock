@@ -1,5 +1,5 @@
 PODS:
-  - RSViewControllerAlertView (0.1.0)
+  - RSViewControllerAlertView (0.1.4)
 
 DEPENDENCIES:
   - RSViewControllerAlertView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RSViewControllerAlertView: 245ae34fec1e61263ea577b0a14b7f94039d0714
+  RSViewControllerAlertView: 574598a618fc9e191bb83a980436d4d6353960e6
 
-PODFILE CHECKSUM: 1df67952124d2cc06b6d7cf140eaca7f2a33b100
+PODFILE CHECKSUM: f925b1175c406269af90989b5fc495b808b71a3a
 
 COCOAPODS: 1.4.0

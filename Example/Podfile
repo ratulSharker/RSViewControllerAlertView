@@ -3,8 +3,4 @@ use_frameworks!
 target 'RSViewControllerAlertView_Example' do
   pod 'RSViewControllerAlertView', :path => '../'
 
-  target 'RSViewControllerAlertView_Tests' do
-    inherit! :search_paths
-
-  end
 end
