@@ -1,6 +1,6 @@
 # RSViewControllerAlertView
 
-[![CI Status](http://img.shields.io/travis/Ratul Sharker/RSViewControllerAlertView.svg?style=flat)](https://travis-ci.org/Ratul Sharker/RSViewControllerAlertView)
+[![CI Status](http://img.shields.io/travis/ratulSharker/RSViewControllerAlertView.svg?style=flat)](https://travis-ci.org/ratulSharker/RSViewControllerAlertView)
 [![Version](https://img.shields.io/cocoapods/v/RSViewControllerAlertView.svg?style=flat)](http://cocoapods.org/pods/RSViewControllerAlertView)
 [![License](https://img.shields.io/cocoapods/l/RSViewControllerAlertView.svg?style=flat)](http://cocoapods.org/pods/RSViewControllerAlertView)
 [![Platform](https://img.shields.io/cocoapods/p/RSViewControllerAlertView.svg?style=flat)](http://cocoapods.org/pods/RSViewControllerAlertView)
