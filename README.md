@@ -16,8 +16,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 RSViewControllerAlertView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+This cocoapod is still not released yet, but you can still use it from github.
 ```ruby
-pod 'RSViewControllerAlertView'
+pod 'RSViewControllerAlertView', :git => 'https://github.com/ratulSharker/RSViewControllerAlertView', :branch => 'master', :tag => 'releaseV0.1.4'
 ```
 
 ## Author
