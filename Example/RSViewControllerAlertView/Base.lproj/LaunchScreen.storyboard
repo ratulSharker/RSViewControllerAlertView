@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,23 +22,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSViewController Alert View" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P8-kz-CgG">
-                                <rect key="frame" x="24" y="318" width="327" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-wc-lVW">
+                                <rect key="frame" x="16" y="306" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oQg-wc-lVW" secondAttribute="height" multiplier="343:55" id="NcI-M2-Dwn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4ch-MU-dPX">
+                                <rect key="frame" x="157" y="238" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="kxR-qh-lzM"/>
+                                    <constraint firstAttribute="height" constant="60" id="mH1-oU-5NW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9P8-kz-CgG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3gW-l5-Whf"/>
-                            <constraint firstItem="9P8-kz-CgG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6He-bY-Ggs"/>
+                            <constraint firstItem="oQg-wc-lVW" firstAttribute="top" secondItem="4ch-MU-dPX" secondAttribute="bottom" constant="8" id="1NH-1t-v6C"/>
+                            <constraint firstItem="oQg-wc-lVW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8x3-iP-ksF"/>
+                            <constraint firstItem="4ch-MU-dPX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GHL-5E-euH"/>
+                            <constraint firstAttribute="trailing" secondItem="oQg-wc-lVW" secondAttribute="trailing" constant="16" id="bLa-YW-ip8"/>
+                            <constraint firstItem="oQg-wc-lVW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dXq-Ep-5v4"/>
+                            <constraint firstItem="oQg-wc-lVW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="16" id="lcy-wH-p51"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banner" width="639" height="52"/>
+        <image name="logo" width="50" height="50"/>
+    </resources>
 </document>
