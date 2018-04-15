@@ -149,6 +149,8 @@
         self.view.backgroundColor = [UIColor clearColor];
         [alertHolder.view addSubview:self.view];
         
+        [UIApplication.sharedApplication beginIgnoringInteractionEvents];
+        
         [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveLinear
                          animations:^{
                              
@@ -162,6 +164,8 @@
                                                                                               green:50.0/255.0
                                                                                                blue:50.0/255.0
                                                                                               alpha:0.85];
+                                              } completion:^(BOOL finished) {
+                                                  [UIApplication.sharedApplication endIgnoringInteractionEvents];
                                               }];
                              
                              if(self.vcavDelegate &&
@@ -191,6 +195,7 @@
             animatedFrame.origin.y = currentAlertHolder.view.frame.size.height;
             
             self.view.backgroundColor = [UIColor clearColor];
+            [UIApplication.sharedApplication beginIgnoringInteractionEvents];
             
             [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveLinear animations:^{
                 
@@ -202,6 +207,8 @@
                     [self removeFromParentViewController];
                     [self.view removeFromSuperview];
                     [self didMoveToParentViewController:nil];
+                    
+                    [UIApplication.sharedApplication endIgnoringInteractionEvents];
                     
                     //call delegate that this view controller is shown
                     if(self.vcavDelegate &&
@@ -235,6 +242,7 @@
                                                     alpha:0.85];
         self.view.alpha = 0.0;
         [alertHolder.view addSubview:self.view];
+        [UIApplication.sharedApplication beginIgnoringInteractionEvents];
         
         [UIView animateWithDuration:1.0
                          animations:^{
@@ -243,7 +251,7 @@
                              
                          } completion:^(BOOL finshed){
                              //call delegate that this view controller is shown
-                             
+                             [UIApplication.sharedApplication endIgnoringInteractionEvents];
                              if(self.vcavDelegate &&
                                 [self.vcavDelegate respondsToSelector:(@selector(RSViewControllerAlertViewDidAppear:))]
                                 )
@@ -266,6 +274,8 @@
                 [self.vcavDelegate RSViewControllerAlertViewWillDisappear:self];
             }
             
+            [UIApplication.sharedApplication beginIgnoringInteractionEvents];
+            
             [UIView animateWithDuration:1.0
                              animations:^{
                                  
@@ -277,6 +287,8 @@
                                      [self removeFromParentViewController];
                                      [self.view removeFromSuperview];
                                      [self didMoveToParentViewController:nil];
+                                     
+                                     [UIApplication.sharedApplication endIgnoringInteractionEvents];
                                      
                                      //call delegate that this view controller is shown
                                      if(self.vcavDelegate &&
