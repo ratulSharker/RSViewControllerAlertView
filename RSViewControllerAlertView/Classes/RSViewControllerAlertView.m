@@ -127,14 +127,15 @@
 -(void)showOnWithDamping:(UIViewController*)alertHolder
 {
     //set initial frame
-    CGRect originalFrame = self.view.frame;
-    CGRect initialFrame = CGRectMake(originalFrame.origin.x,
-                                     originalFrame.origin.y,
-                                     originalFrame.size.width,
-                                     originalFrame.size.height);
-    
-    initialFrame.origin.y = alertHolder.view.bounds.size.height;
-    
+    CGRect finalFrame = CGRectMake(0,
+                                   0,
+                                   alertHolder.view.bounds.size.width,
+                                   alertHolder.view.bounds.size.height);
+    self.view.bounds = finalFrame;
+    CGRect initialFrame = CGRectMake(finalFrame.origin.x,
+                                     finalFrame.size.height,
+                                     finalFrame.size.width,
+                                     finalFrame.size.height);
     self.view.frame = initialFrame;
     self.view.backgroundColor = [UIColor clearColor];
     [alertHolder.view addSubview:self.view];
@@ -144,7 +145,7 @@
     [UIView animateWithDuration:1.0 delay:0.1 usingSpringWithDamping:0.4 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveLinear
                      animations:^{
                          
-                         self.view.frame = originalFrame;
+                         self.view.frame = finalFrame;
                          
                      } completion:^(BOOL finshed){
                          //call delegate that this view controller is shown
