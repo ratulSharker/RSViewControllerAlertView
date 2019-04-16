@@ -224,9 +224,7 @@
 -(void)showOnWithFadeIn:(UIViewController*)alertHolder
 {
     //set initial frame
-    CGRect originalFrame = self.view.frame;
-    
-    self.view.frame = originalFrame;
+    self.view.frame = alertHolder.view.bounds;
     self.view.backgroundColor = [UIColor colorWithRed:50.0/255.0
                                                 green:50.0/255.0
                                                  blue:50.0/255.0

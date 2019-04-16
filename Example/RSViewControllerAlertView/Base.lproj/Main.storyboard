@@ -221,7 +221,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgC-q9-LJf">
-                                <rect key="frame" x="94.5" y="318.5" width="186" height="30"/>
+                                <rect key="frame" x="94.5" y="280.5" width="186" height="30"/>
                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.66666666669999997" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show on Top of pushed VC">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,7 +231,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHd-zg-H0u">
-                                <rect key="frame" x="49.5" y="356.5" width="276" height="30"/>
+                                <rect key="frame" x="49.5" y="318.5" width="276" height="30"/>
                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.66666666669999997" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show on Top of Navigation of pushed vc">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -241,7 +241,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybA-AE-WAQ">
-                                <rect key="frame" x="71.5" y="394.5" width="232" height="30"/>
+                                <rect key="frame" x="71.5" y="356.5" width="232" height="30"/>
                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.66666666669999997" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show on Top Of Tabbar Controller">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -254,12 +254,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WQC-PH-SPx" firstAttribute="leading" secondItem="Nmn-Ez-iVd" secondAttribute="leading" id="7N6-81-oXR"/>
+                            <constraint firstItem="yHd-zg-H0u" firstAttribute="centerY" secondItem="Nmn-Ez-iVd" secondAttribute="centerY" id="AfK-r0-tDU"/>
                             <constraint firstItem="eRU-ra-5aX" firstAttribute="top" secondItem="WQC-PH-SPx" secondAttribute="bottom" id="N5B-y3-7Wg"/>
                             <constraint firstItem="wgC-q9-LJf" firstAttribute="centerX" secondItem="Nmn-Ez-iVd" secondAttribute="centerX" id="OCn-fX-ejC"/>
                             <constraint firstItem="WQC-PH-SPx" firstAttribute="top" secondItem="2ej-aw-KEf" secondAttribute="bottom" id="WH8-bM-eFM"/>
                             <constraint firstAttribute="trailing" secondItem="WQC-PH-SPx" secondAttribute="trailing" id="YCg-zx-6Ha"/>
                             <constraint firstItem="yHd-zg-H0u" firstAttribute="top" secondItem="wgC-q9-LJf" secondAttribute="bottom" constant="8" id="aUW-j5-vIr"/>
-                            <constraint firstItem="wgC-q9-LJf" firstAttribute="centerY" secondItem="Nmn-Ez-iVd" secondAttribute="centerY" id="f0E-yL-AjD"/>
                             <constraint firstItem="yHd-zg-H0u" firstAttribute="centerX" secondItem="wgC-q9-LJf" secondAttribute="centerX" id="kfY-ta-0UD"/>
                             <constraint firstItem="ybA-AE-WAQ" firstAttribute="top" secondItem="yHd-zg-H0u" secondAttribute="bottom" constant="8" id="rcN-YS-sS9"/>
                             <constraint firstItem="ybA-AE-WAQ" firstAttribute="centerX" secondItem="yHd-zg-H0u" secondAttribute="centerX" id="zRB-6f-MsO"/>
